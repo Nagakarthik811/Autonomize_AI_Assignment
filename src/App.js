@@ -1,8 +1,6 @@
-// Frontend Code: React Application
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Importing CSS styles
+import './App.css'; 
 
-// API utility to cache data
 const cache = {};
 const fetchData = async (url) => {
   if (cache[url]) return cache[url];
@@ -12,7 +10,6 @@ const fetchData = async (url) => {
   return data;
 };
 
-// Components
 const App = () => {
   const [username, setUsername] = useState('');
   const [userInfo, setUserInfo] = useState(null);
